@@ -1,0 +1,213 @@
+/* @import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800); */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;300;400&display=swap");
+
+html,
+body {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 300;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: right;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 20px;
+  border-right: 1px solid black;
+}
+
+.link {
+  display: inline-block;
+  padding: 5px 0;
+  margin: 15px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  font-weight: 800;
+  font-size: 24px;
+}
+.bar {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 300ms;
+}
+.link:hover {
+  background-color: #1a2854;
+  color: white;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+.basicblock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  width: 80%;
+}
+
+.socialss {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  /* text-decoration: underline; */
+
+  border-bottom: 0.5px solid #000;
+  padding-bottom: 3px;
+}
+h2 {
+  font-size: smaller;
+}
+h3 {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+}
+
+h4 {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+}
+/* p {
+  font-weight: bold;
+} */
+
+.pcentre {
+  text-align: center;
+}
+
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #1a2854;
+  color: white;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.fab:hover {
+  background-color: #fdd83c;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 21%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.traitsname {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.traitsimg {
+  width: 150px;
+  height: 150px;
+  padding-left: 10px;
+}
+
+img {
+  transition: transform 0.25s ease;
+}
+
+img:hover {
+  -webkit-transform: scale(1.5); /* or some other value */
+  transform: scale(1.5);
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
